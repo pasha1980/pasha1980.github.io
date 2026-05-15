@@ -1,0 +1,46 @@
+# Site settings
+title: pasha khvalygin @pasha1980
+email: hvalyginpavel@gmail.com
+description: >-
+  Senior software engineer. Tech enthusiast. Building things for fun.
+baseurl: ""
+url: "https://chere-pashka.tech"
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Projects
+    url: /projects/
+  - title: Contact
+    url: /contact/
+
+# Projects
+projects:
+  - title: "Home AI (and not only) lab"
+    url: /projects/home-ai-lab/
+    description: "Home AI, games, storage, and experimentation field."
+  - title: "TTY Space Program"
+    url: /projects/tsp/
+    description: "Kerbal Space Program in the terminal. In Bash."
+  - title: "LangBench"
+    url: /projects/langbench/
+    description: "Language competitions caused by dispute with a colleague"
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

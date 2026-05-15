@@ -1,0 +1,8 @@
+<div class="project-cards">
+  {% for project in site.projects %}
+  <a href="{{ project.url | relative_url }}" class="project-card">
+    <h3 class="project-card-title">{{ project.title }}</h3>
+    <p class="project-card-desc">{{ project.description }}</p>
+  </a>
+  {% endfor %}
+</div>

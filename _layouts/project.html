@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  {% include navigation.html %}
+  <main class="container">
+    <article class="project-page">
+      <h1>{{ page.title }}</h1>
+      {{ content }}
+      {% assign matching_posts = site.posts | where_exp: "post", "post.tags contains page.slug" %}
+      {% if matching_posts.size > 0 %}
+      <section class="related-blogs">
+        <h2>Related Posts</h2>
+        <ul class="blog-list">
+          {% for post in matching_posts %}
+          <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> <span class="post-date">{{ post.date | date: '%B %d, %Y' }}</span></li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+    </article>
+  </main>
+</body>
+</html>
