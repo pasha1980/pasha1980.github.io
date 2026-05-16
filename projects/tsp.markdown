@@ -2,6 +2,7 @@
 layout: project
 title: "TSP (tty space program)"
 slug: tsp
+date: 2026-05-10
 permalink: /projects/tsp/
 ---
 

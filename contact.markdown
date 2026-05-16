@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Contact
+date: 2026-05-10
 permalink: /contact/
 ---
 
