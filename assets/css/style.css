@@ -206,6 +206,10 @@ main {
   color: #87ff87;
 }
 
+article.blog-post p {
+  margin-bottom: 20px;
+}
+
 .post-date {
   color: #71717a;
   font-size: 14px;
