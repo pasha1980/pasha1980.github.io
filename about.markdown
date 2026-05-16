@@ -13,9 +13,6 @@ I'm a software engineer. My boss calls me senior software engineer. I call mysel
 Backend stuff. Infrastructure. Linux. DevOps. Embedded systems. Reverse engineering. Things that usually happen in terminal windows where nobody can see me sweating.
 
 Languages that aren't Python or JavaScript:
-- **PHP** (it paying bills, whatever you can say)
-- **Javascript**
-- **Go** (yeah, I'm kinda hipster)
 - **Bash**
 - **C**
 - **Rust** (when it doesn't make me want to cry)
