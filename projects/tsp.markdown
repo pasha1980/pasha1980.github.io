@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "TSP (tty space program)"
+title: "TTY Space Program | TSP"
 slug: tsp
 date: 2026-05-10
 permalink: /projects/tsp/
@@ -10,4 +10,3 @@ The idea is simple: make a TUI game with accurate physics for space rockets, jus
 
 That's tough. That's not easy. But the work keeps going.
 
-Here's the full path of how I'm making it happen.
