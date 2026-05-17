@@ -33,6 +33,7 @@ projects:
 theme: minima
 markdown: kramdown
 highlighter: rouge
+gems: [jekyll-mermaid]
 plugins:
   - jekyll-feed
   - jekyll-sitemap
