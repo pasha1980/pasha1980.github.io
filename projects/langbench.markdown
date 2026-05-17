@@ -2,7 +2,7 @@
 layout: project
 title: "LangBench"
 slug: langbench
-date: 2026-05-10
+last_modified_at: 2026-05-10
 permalink: /projects/langbench/
 ---
 

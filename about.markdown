@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-date: 2026-05-10
+last_modified_at: 2026-05-10
 permalink: /about/
 ---
 

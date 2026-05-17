@@ -2,7 +2,7 @@
 layout: project
 title: "Home AI (and not only) lab"
 slug: home-ai-lab
-date: 2026-05-10
+last_modified_at: 2026-05-10
 permalink: /projects/home-ai-lab/
 ---
 

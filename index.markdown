@@ -1,6 +1,6 @@
 ---
 layout: home
-date: 2026-05-10
+last_modified_at: 2026-05-10
 ---
 
 <section class="hero">

@@ -3,7 +3,6 @@ title: pasha khvalygin @pasha1980
 email: hvalyginpavel@gmail.com
 description: >-
   Senior software engineer. Tech enthusiast. Building things for fun.
-baseurl: ""
 url: "https://pasha1980.github.io"
 
 # Navigation
@@ -33,7 +32,6 @@ projects:
 theme: minima
 markdown: kramdown
 highlighter: rouge
-gems: [jekyll-mermaid]
 plugins:
   - jekyll-feed
   - jekyll-sitemap
