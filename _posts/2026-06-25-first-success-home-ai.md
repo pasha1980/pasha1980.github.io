@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "First Success"
-date: 2026-06-26
+date: 2026-06-25
 tags:
   - home-ai-lab
 ---
