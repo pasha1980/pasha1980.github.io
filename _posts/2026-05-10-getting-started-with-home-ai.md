@@ -22,7 +22,7 @@ If you go to HuggingFace and try to search for AI models that I could run with R
 
 Let's say it together loud. CachyOS! Yes, I followed that Reddit hype and installed it. I know, I know, there's plenty of alternatives, and I promise, I'll try them all. But I wanted just something that I can install and make it run. Fast, smooth and with latest software (I use Arch, btw, rolling releases is not an issue when you get used to suffer).
 
-Why not Windows? I don't like it and don't want to explain why.
+Why not Windows? Actually, I tried it. The combination of Windows compatibility for games and WSL's powers for Linux-related things (such as self-hosting or running AI models) sounds like a real-world solution and a very pragmatic approach. But in reality it failed — many times. The first time I tried to install Win11, it refused to work with my hardware. After fighting it for a while, I realized that everything just works really poorly. Task Manager stops responding after a few clicks, certain games don't run properly, and mirroring the network for WSL also works really badly. Rather than spending time learning Windows from the beginning like I did with Linux, it sounded more reasonable to switch back.
 
 ### first ai try
 
