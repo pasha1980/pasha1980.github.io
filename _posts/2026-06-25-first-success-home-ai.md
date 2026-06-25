@@ -16,6 +16,8 @@ I ran `htop` and `nvtop` to check system load. The GPU showed zero usage.
 
 I checked Ollama's GPU compatibility list and opened issues on their GitHub. Ollama does not support the gfx1201 cores in my Radeon RX 9070. A [PR exists](https://github.com/ollama/ollama/pull/10676), still in draft. Ollama falls back to CPU, loads a small model, and the output turns into guesswork.
 
+## solution
+
 I switched to llama.cpp with Vulkan support. Ollama does not offer a Vulkan backend, so I needed a different framework. llama.cpp is the obvious choice.
 
 Building it takes more than one command:
