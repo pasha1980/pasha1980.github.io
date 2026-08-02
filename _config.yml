@@ -1,32 +1,42 @@
 # Site settings
-title: pasha khvalygin @pasha1980
+title: Pavel Khvalygin
 email: hvalyginpavel@gmail.com
 description: >-
-  Senior software engineer. Tech enthusiast. Building things for fun.
+  Personal site of Pavel Khvalygin — software engineer writing about homelab AI,
+  terminal games, and language benchmarks.
 url: "https://pasha1980.github.io"
+author: Pavel Khvalygin
+twitter:
+  username: pasha1980
+  card: summary
 
 # Navigation
 navigation:
   - title: Home
     url: /
-  - title: About
-    url: /about/
+  - title: Blog
+    url: /blog/
   - title: Projects
     url: /projects/
+  - title: About
+    url: /about/
   - title: Contact
     url: /contact/
 
 # Projects
 projects:
   - title: "Home AI (and not only) lab"
+    slug: home-ai-lab
     url: /projects/home-ai-lab/
-    description: "Home AI, games, storage, and experimentation field."
+    description: "Homelab for AI inference, gaming, storage, and experiments."
   - title: "TTY Space Program"
+    slug: tsp
     url: /projects/tsp/
-    description: "Kerbal Space Program in the terminal. In Bash."
+    description: "Kerbal Space Program in the terminal, written in Bash."
   - title: "LangBench"
+    slug: langbench
     url: /projects/langbench/
-    description: "Language competitions caused by dispute with a colleague"
+    description: "Benchmarks born from a dispute about Go vs PHP and JavaScript."
 
 # Build settings
 theme: minima
@@ -35,6 +45,7 @@ highlighter: rouge
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-last-modified-at
 
 # Exclude from processing
 exclude:

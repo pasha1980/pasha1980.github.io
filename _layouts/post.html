@@ -1,23 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{{ site.description }}">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/syntax.css' | relative_url }}">
-</head>
-<body>
-  {% include navigation.html %}
-  <main class="container">
-    <article class="blog-post">
+---
+layout: default
+---
+<article class="blog-post">
+  <section class="panel">
+    <div class="panel-header">Blog post</div>
+    <div class="panel-body">
       <header class="post-header">
         <h1>{{ page.title }}</h1>
-        <time class="post-date">{{ page.date | date: '%B %d, %Y' }}</time>
+        <div class="post-meta">
+          <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y-%m-%d' }}</time>
+          {% for tag in page.tags %}
+            {% assign project = site.projects | where: 'slug', tag | first %}
+            {% if project %}
+              &middot; <a href="{{ project.url | relative_url }}" class="tag">{{ project.title }}</a>
+            {% else %}
+              &middot; <span class="tag tag-muted">{{ tag }}</span>
+            {% endif %}
+          {% endfor %}
+        </div>
       </header>
       {{ content }}
-    </article>
-  </main>
-</body>
-</html>
+    </div>
+  </section>
+</article>

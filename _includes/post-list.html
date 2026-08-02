@@ -1,0 +1,29 @@
+<table class="forum-table post-table">
+  <thead>
+    <tr>
+      <th class="col-title">Topic</th>
+      <th class="col-project">Project</th>
+      <th class="col-date">Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for post in include.posts %}
+    <tr>
+      <td class="col-title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </td>
+      <td class="col-project">
+        {% for tag in post.tags %}
+          {% assign project = site.projects | where: 'slug', tag | first %}
+          {% if project %}
+            <a href="{{ project.url | relative_url }}" class="tag">{{ project.title }}</a>
+          {% else %}
+            <span class="tag tag-muted">{{ tag }}</span>
+          {% endif %}
+        {% endfor %}
+      </td>
+      <td class="col-date">{{ post.date | date: '%Y-%m-%d' }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

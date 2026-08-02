@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  {% include navigation.html %}
+  <div class="page-wrap">
+    {% include breadcrumbs.html %}
+    <main>
+      {{ content }}
+    </main>
+    <footer class="site-footer">
+      <p>&copy; {{ 'now' | date: '%Y' }} Pavel Khvalygin &middot; <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p>
+    </footer>
+  </div>
+  <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+</body>
+</html>

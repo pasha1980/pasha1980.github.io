@@ -1,0 +1,22 @@
+{% if page.url != '/' %}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <a href="{{ '/' | relative_url }}">Home</a>
+  {% if page.layout == 'post' %}
+    <span class="breadcrumb-sep">&rsaquo;</span>
+    <a href="{{ '/blog/' | relative_url }}">Blog</a>
+    <span class="breadcrumb-sep">&rsaquo;</span>
+    <span class="breadcrumb-current">{{ page.title }}</span>
+  {% elsif page.layout == 'project' %}
+    <span class="breadcrumb-sep">&rsaquo;</span>
+    <a href="{{ '/projects/' | relative_url }}">Projects</a>
+    <span class="breadcrumb-sep">&rsaquo;</span>
+    <span class="breadcrumb-current">{{ page.title }}</span>
+  {% elsif page.url != '/about/' and page.url != '/contact/' and page.url != '/projects/' and page.url != '/blog/' %}
+    <span class="breadcrumb-sep">&rsaquo;</span>
+    <span class="breadcrumb-current">{{ page.title }}</span>
+  {% else %}
+    <span class="breadcrumb-sep">&rsaquo;</span>
+    <span class="breadcrumb-current">{{ page.title | default: 'Home' }}</span>
+  {% endif %}
+</nav>
+{% endif %}

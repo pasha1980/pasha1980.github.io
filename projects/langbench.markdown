@@ -2,9 +2,12 @@
 layout: project
 title: "LangBench"
 slug: langbench
-last_modified_at: 2026-05-10
+description: >-
+  Language performance benchmarks created to settle a debate about Go, PHP, and JavaScript.
+last_modified_at: 2026-08-02
 permalink: /projects/langbench/
 ---
 
-Once my colleague told me that Go is faster than PHP and Javascript. Sounds reasonable, but it's not. Also, in my company there's a lot of "smart and modern tech guys" that think only in trendy way. So I decided to prove they are wrong. And I did.
+A colleague claimed Go beats PHP and JavaScript on speed. That sounded wrong. Our workplace also had plenty of "modern stack" opinions worth testing against data.
 
+LangBench is the result: small benchmarks, measured results, and fewer arguments at the coffee machine.

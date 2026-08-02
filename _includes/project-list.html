@@ -1,0 +1,21 @@
+<table class="forum-table project-table">
+  <thead>
+    <tr>
+      <th class="col-title">Project</th>
+      <th class="col-desc">Description</th>
+      <th class="col-posts">Posts</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for project in site.projects %}
+    {% assign post_count = site.posts | where_exp: 'post', 'post.tags contains project.slug' | size %}
+    <tr>
+      <td class="col-title">
+        <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+      </td>
+      <td class="col-desc">{{ project.description }}</td>
+      <td class="col-posts">{{ post_count }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

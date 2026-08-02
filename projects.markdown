@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Projects
+description: >-
+  Side projects by Pavel Khvalygin — homelab AI, a Bash space sim, and language benchmarks.
 permalink: /projects/
-last_modified_at: 2026-05-10
+last_modified_at: 2026-08-02
 ---
 
-Here's a list of my projects. Each one is something I'm passionate about and working on.
+Each project has its own page with a short overview and related blog posts.
 
-{% include project-cards.html %}
+{% include project-list.html %}
