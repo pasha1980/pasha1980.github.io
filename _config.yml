@@ -37,6 +37,10 @@ projects:
     slug: langbench
     url: /projects/langbench/
     description: "Benchmarks born from a dispute about Go vs PHP and JavaScript."
+  - title: "CloudOpt"
+    slug: cloudopt
+    url: /projects/cloudopt/
+    description: "A local, read-only cloud cost optimization analyzer for AWS and GCP."
 
 # Build settings
 theme: minima
